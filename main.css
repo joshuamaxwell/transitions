@@ -1,6 +1,7 @@
 body * {
   vertical-align: top;
   margin: 0px;
+  position: relative;
 }
 
 body {
@@ -18,21 +19,28 @@ body {
 
 .header {
   height: 100px;
-  padding: 20px;
+  line-height: 100px;
   margin-top: 10px;
   margin-bottom: 30px;
-  background: rgb(148, 12, 16);
+  background: rgb(27, 41, 61);
   font-size: 1.75em;
   z-index: 50;
   position: fixed;
   width: 100%;
-  box-shadow: 2px 0px 20px brown;
+  font-size: 40px;
+  box-shadow: 2px 0px 20px rgb(27, 41, 61);
+}
+
+.header * {
+  margin: 0px;
+  padding: 0px;
+  line-height: 100px;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0px;
   border: none;
   background: none;
 }
@@ -48,26 +56,33 @@ body {
   height: 200px;
   border-radius: 105px;
   border: 5px solid rgb(43, 13, 5);
-  border: 5px solid white;
-  box-shadow: 0px 0px 5px 2px rgb(71, 41, 41);
-  margin-left: 520px;
-  margin-top: -120px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 5px 2px rgb(71, 41, 41),
+             inset 10px 0px 20px 0px white;
+  left: 750px;
+  top: -30px;
   z-index: 150;
   background: rgb(215,150,48);
   display: inline-block;
-  position: relative;
+  position: fixed;
 }
 
 .square {
+  z-index: 46;
   border-radius: 3px;
-  width: 254px;
-  height: 254px;
+  border: 2px solid rgba(68, 41, 21, 0);
+  width: 263px;
+  height: 263px;
   padding: 20px;
-  margin: 10px;
-  border: 1px solid gray;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 15px;
   display: inline-block;
-  background: rgb(43, 13, 5);
-  box-shadow: inset 0px 0px 3px 1px rgb(131, 109, 109);
+  background: rgb(68, 41, 21);
+  box-shadow: inset -1px  1px 2px 0px rgb(131, 109, 109),
+              inset  1px -1px 2px 0px rgb(27, 27, 27),
+                     0px  0px 3px 2px rgb(17, 17, 17);
 }
 
 .square * {
@@ -77,15 +92,12 @@ body {
 }
 
 .transparent {
-  border-radius: 3px;
-  width: 244px;
-  height: 244px;
   background: rgba(73,99,140, 0.58);
-  border: 5px solid rgb(43, 13, 5);
+  border: 2px solid rgb(68, 41, 21);
   z-index: 100;
   position: relative;
-  margin: 10px;
-  box-shadow: inset 2px -2px 5px 0px black;
+  box-shadow: inset 1px -1px 2px 0px rgb(68, 41, 21),
+                    2px -2px 2px 0px rgb(90, 80, 80);
 }
 
 .thumb {
@@ -103,3 +115,76 @@ body {
   box-shadow: -2px 0px 20px brown;
 }
 
+.anjelica {
+  z-index: 200;
+}
+
+.amara, .daphne {
+  z-index: 100;
+}
+
+.violet {
+  z-index: 34;
+}
+
+.violet.transparent, .amara.transparent{
+  z-index: 200;
+}
+
+.jocelyn {
+  z-index: 100;
+}
+
+.anjelica.transparent, .daphne.transparent {
+  z-index: 25;
+}
+
+.tall-left-bar {
+  position: fixed;
+  width: 30px;
+  background: rgb(215, 150, 48);
+}
+
+.tall-left-bar.sixhundred {
+  height: 600px;
+  margin-top: 150px;
+  opacity: 1;
+} 
+.tall-left-bar.fivehundred {
+  height: 500px;
+  margin-top: 200px;
+  left: 50px;
+  opacity: 0.8;
+}
+.tall-left-bar.fourhundred {
+  height: 400px;
+  margin-top: 250px;
+  left: 100px;
+  opacity: 0.7;
+}
+.tall-left-bar.threehundred {
+  height: 300px;
+  margin-top: 300px;
+  left: 150px;
+  opacity: 0.6;
+}
+.tall-left-bar.twohundred {
+  height: 200px;
+  margin-top: 350px;
+  left: 200px;
+  opacity: 0.5;
+}
+.tall-left-bar.onehundred {
+  height: 100;
+  margin-top: 400px;
+  left: 250px;
+  z-index: 35;
+  opacity: 0.4;
+}
+.tall-left-bar.lesshundred {
+  height: 50px;
+  margin-top: 425px;
+  left: 300px;
+  z-index: 45;
+  opacity: 0.3;
+}
