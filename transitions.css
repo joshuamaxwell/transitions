@@ -11,6 +11,12 @@
     z-index: 300;
 }
 
+.circle:active {
+  box-shadow: 0px 0px 800px 200px yellow,
+              0px 0px 500px 2px white;
+
+}
+
 .header:hover {
   letter-spacing: 3;
   text-shadow: -3px 3px rgb(70, 84, 104);
@@ -36,5 +42,9 @@
 }
 
 .tall-left-bar:active {
-  -webkit-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg) rotateX(25deg);
+ }
+
+.header:active {
+  box-shadow: 2px 0px 50px rgb(0, 0, 0);
 }
