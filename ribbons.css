@@ -1,0 +1,94 @@
+/* ribbon style */
+.myribbon {
+  position: fixed;
+  top: 425px;
+  left: 60px;
+  z-index: 30;
+}
+
+ .myribbon.ribbon-wrapper {
+  position: relative;
+}
+ .myribbon .ribbon-front {
+  background-color: #862824;  height: 50px;
+  width: 1125px;
+  position: relative;
+  left:-25px;
+  z-index: 2;
+}
+
+ .myribbon .ribbon-front,
+ .myribbon .ribbon-back-left,
+ .myribbon .ribbon-back-right
+{
+  -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+ .myribbon .ribbon-edge-topleft,
+ .myribbon .ribbon-edge-topright,
+ .myribbon .ribbon-edge-bottomleft,
+ .myribbon .ribbon-edge-bottomright {
+  position: absolute;
+  z-index: 1;
+  border-style:solid;
+  height:0px;
+  width:0px;
+}
+
+ .myribbon .ribbon-edge-topleft,
+ .myribbon .ribbon-edge-topright {
+}
+
+ .myribbon .ribbon-edge-bottomleft,
+ .myribbon .ribbon-edge-bottomright {
+  top: 50px;
+}
+
+ .myribbon .ribbon-edge-topleft,
+ .myribbon .ribbon-edge-bottomleft {
+  left: -25px;
+  border-color: transparent #421614 transparent transparent;
+}
+
+ .myribbon .ribbon-edge-topleft {
+  top: 0px;
+  border-width: 0px 15px 0 0;
+}
+ .myribbon .ribbon-edge-bottomleft {
+  border-width: 0 15px 10px 0;
+}
+
+ .myribbon .ribbon-edge-topright,
+ .myribbon .ribbon-edge-bottomright {
+  left: 900px;
+  border-color: transparent transparent transparent #783633;
+}
+
+ .myribbon .ribbon-edge-topright {
+  top: 0px;
+  border-width: 0px 0 0 0px;
+}
+ .myribbon .ribbon-edge-bottomright {
+  border-width: 0 0 0px 0px;
+}
+
+ .myribbon .ribbon-back-left {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 0px;
+  height: 50px;
+    z-index: 0;
+}
+
+ .myribbon .ribbon-back-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 50px;
+    z-index: 0;
+}
